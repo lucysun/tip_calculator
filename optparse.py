@@ -7,9 +7,9 @@ parser.add_option("-t", "--tip", dest="tip", type="float", help="tip in decimal 
 
 (options, args) = parser.parse_args()
 if not options.meal:
-    parser.error("dat meal cost wut")
+    parser.error("Please enter the cost of your meal")
 if not options.tax:
-    parser.error("bro do you even have a tax rate")
+    parser.error("Please enter the tax rate in decimal form")
 
 tax_value = options.meal * options.tax
 meal_with_tax= tax_value + options.meal
